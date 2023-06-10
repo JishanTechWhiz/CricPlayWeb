@@ -1,0 +1,311 @@
+*{
+  font-family: 'Poppins', sans-serif;
+}
+.mycon{
+    display: grid;
+    row-gap: 1rem;
+ }
+ 
+ .mycon img{
+     border-radius: 0.4rem;
+ }
+ 
+ /***/
+ 
+ /* button  */
+ .learn-more{
+     position: relative;
+     display: inline-block;
+     cursor: pointer;
+     outline: none;
+     border: 0;
+     vertical-align: middle;
+     text-decoration: none;
+     background: transparent;
+     padding: 0;
+     font-size: inherit;
+     font-family: inherit;
+     margin-bottom: 1rem;
+    }
+    
+    .learn-more {
+     width: 12rem;
+     height: auto;
+    }
+    
+    .learn-more .circle {
+     transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+     position: relative;
+     display: block;
+     margin: 0;
+     width: 3rem;
+     height: 3rem;
+     background: #282936;
+     border-radius: 1.625rem;
+    }
+    
+    .learn-more .circle .icon {
+     transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+     position: absolute;
+     top: 0;
+     bottom: 0;
+     margin: auto;
+     background: #fff;
+    }
+    
+    .learn-more .circle .icon.arrow {
+     transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+     left: 0.625rem;
+     width: 1.125rem;
+     height: 0.125rem;
+     background: none;
+    }
+    
+    .learn-more .circle .icon.arrow::before {
+     position: absolute;
+     content: "";
+     top: -0.29rem;
+     right: 0.0625rem;
+     width: 0.625rem;
+     height: 0.625rem;
+     border-top: 0.125rem solid #fff;
+     border-right: 0.125rem solid #fff;
+     transform: rotate(45deg);
+    }
+    
+    .learn-more .button-text {
+     transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+     position: absolute;
+     top: 0;
+     left: 0;
+     right: 0;
+     bottom: 0;
+     padding: 0.75rem 0;
+     margin: 0 0 0 1.85rem;
+     color: #282936;
+     font-weight: 700;
+     line-height: 1.6;
+     text-align: center;
+     text-transform: uppercase;
+    }
+    
+    .learn-more:hover .circle {
+     width: 100%;
+    }
+    
+    .learn-more:hover .circle .icon.arrow {
+     background: #fff;
+     transform: translate(1rem, 0);
+    }
+    
+    .learn-more:hover .button-text {
+     color: #fff;
+    }
+ 
+ /**/
+ 
+ 
+ /**/
+ .mobtn{
+   --primary-color: #645bff;
+   --secondary-color: #fff;
+   --hover-color: #111;
+   --arrow-width: 10px;
+   --arrow-stroke: 2px;
+   box-sizing: border-box;
+   border: 0;
+   border-radius: 20px;
+   color: var(--secondary-color);
+   padding: 0.5em 1.5em;
+   background: var(--primary-color);
+   display: flex;
+   transition: 0.2s background;
+   align-items: center;
+   gap: 0.6em;
+   font-weight: bold;
+   margin-bottom: 1.5rem;
+ }
+ 
+ .mobtn .arrow-wrapper {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+ 
+ .mobtn .arrow {
+   margin-top: 1px;
+   width: var(--arrow-width);
+   background: var(--primary-color);
+   height: var(--arrow-stroke);
+   position: relative;
+   transition: 0.2s;
+ }
+ 
+ .mobtn .arrow::before {
+   content: "";
+   box-sizing: border-box;
+   position: absolute;
+   border: solid var(--secondary-color);
+   border-width: 0 var(--arrow-stroke) var(--arrow-stroke) 0;
+   display: inline-block;
+   top: -3px;
+   right: 3px;
+   transition: 0.2s;
+   padding: 3px;
+   transform: rotate(-45deg);
+ }
+ 
+ .mobtn:hover {
+   background-color: var(--hover-color);
+ }
+ 
+ .mobtn:hover .arrow {
+   background: var(--secondary-color);
+ }
+ 
+ .mobtn:hover .arrow:before {
+   right: 0;
+ }
+ /**/
+ 
+ .input-group {
+     display: flex;
+     align-items: center;
+   }
+   
+   .input {
+     min-height: 50px;
+     max-width: 150px;
+     padding: 0 1rem;
+     color: black;
+     font-size: 15px;
+     border: 1px solid #5e4dcd;
+     border-radius: 6px 0 0 6px;
+     background-color: transparent;
+   }
+   
+   .buttons--submit {
+     min-height: 50px;
+     padding: .5em 1em;
+     border: none;
+     border-radius: 0 6px 6px 0;
+     background-color: #5e4dcd;
+     color: #fff;
+     font-size: 15px;
+     cursor: pointer;
+     transition: background-color .3s ease-in-out;
+   }
+   
+   .buttons--submit:hover {
+     background-color: #5e5dcd;
+   }
+   
+   .input:focus, .input:focus-visible {
+     border-color: #3898EC;
+     outline: none;
+   }
+   
+ 
+ /**/
+ 
+ .mytext{
+ 
+ 
+     color:#243E86;
+     text-align: center;
+     justify-content: center;
+     margin-top: 35px;
+     font-size: 22px;
+     font-family: freight-sans-pro,sans-serif;
+     
+ }
+ 
+ #my{
+     color:#243E86;
+     padding: 8px;
+     font-size: 1.2rem;
+     cursor: pointer;
+   }
+   
+ 
+ .myhead{
+     text-align: center;
+     color:#243E86;;
+     line-height: 70px;
+     position: relative;
+     font-family: freight-sans-pro,sans-serif;
+     
+     
+ }
+ 
+ .myhead::after{
+     content: '';
+     background: lightgray;
+     position: absolute;
+     width: 100px;
+     height: 5px;
+     bottom: 0;
+     border-radius: 5px;
+     left: 50%;
+     transform:translateX(-50px);
+    
+ }
+ 
+ 
+ 
+ .Mynumber{
+     color:#243E86;
+     text-align: center;
+     font-weight: 900;
+     font-size: 82.8px;
+     line-height: 73px;
+     font-family: humane-script,cursive;
+     margin-top: 50px;
+ }
+ 
+ .Mytxt{
+     color:#243E86;
+     text-align: center;
+     margin-top: 30px;
+     font-family: freight-sans-pro,sans-serif;
+     font-weight: 600;
+     font-size: 20px;
+     text-transform: uppercase;
+ 
+ 
+ }
+ 
+ @media only screen and (min-width: 572px)
+ {
+   .mobtn{
+     display: none;
+   }
+ }
+ 
+ @media only screen and (max-width: 571px)
+ {
+   .learn-more{
+     display: none;
+   }
+ 
+     .space1{
+         padding-top: 3rem;
+     }
+ 
+     .space2{
+        padding-top: 1.5rem;
+     }
+ 
+     .space2 input{
+        margin-left: 3rem;
+     }
+ 
+     .space2 button{
+         margin-right: 3rem;
+      }
+ 
+     .myspace1{
+         text-align: center;
+     }
+ 
+ }

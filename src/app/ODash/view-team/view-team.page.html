@@ -1,0 +1,187 @@
+<ion-content>
+  <!-- <div class="container-fluid g-0 p-2 mycss" *ngFor="let data of datauser">
+     <h1>{{data.CoachName}}</h1>
+    </div> -->
+
+
+      <!--==================== SKILLS ====================-->
+      <section class="skills section" id="skills">
+        <div class="mytur">
+            <h2 class="section__title mybg">
+                Registered Teams
+            </h2>
+        </div>
+          
+  
+          <span class="section__subtitle">
+              <!-- My favorite skills -->
+          </span>
+  
+          <div class="skills__container container grid section__border myborder" *ngFor="let data of datauser">
+              <!--==================== SKILLS 1====================-->
+              <div class="skills__content">
+                  <h3 class="skills__title myhead">
+                    <i class="ri-arrow-up-double-line"></i>Top - Order
+                  </h3>
+  
+                  <div class="skills__info">
+                      <div class="skills__data">
+                          <div class="skills_blob myclass">
+                              <img src="../../../assets/cri.png" alt="Skill Image">
+                          </div>
+                          <h3 class="skills__name">{{data.Pname1}}</h3>
+                          <span class="skills__subtitle">
+                            {{data.Ptype1}}
+                          </span>
+                      </div>
+  
+                      <div class="skills__data">
+                          <div class="skills_blob myclass">
+                              <img src="../../../assets/cri.png" alt="Skill Image">
+                          </div>
+                          <h3 class="skills__name">{{data.Pname2}}</h3>
+                          <span class="skills__subtitle">
+                            {{data.Ptype2}}
+                          </span>
+                      </div>
+  
+                      <div class="skills__data">
+                          <div class="skills_blob myclass">
+                              <img src="../../../assets/cricket (1).png" alt="Skill Image">
+                          </div>
+                          <h3 class="skills__name">{{data.Pname3}}</h3>
+                          <span class="skills__subtitle">
+                            {{data.Ptype3}}
+                          </span>
+                      </div>
+  
+                      <div class="skills__data">
+                          <div class="skills_blob myclass">
+                              <img src="../../../assets/cricket (1).png" alt="Skill Image">
+                          </div>
+                          <h3 class="skills__name">{{data.Pname4}}</h3>
+                          <span class="skills__subtitle">
+                            {{data.Ptype4}}
+                          </span>
+                      </div>
+  
+                      <div class="skills__data">
+                          <div class="skills_blob myclass">
+                              <img src="../../../assets/cricket (1).png" alt="Skill Image">
+                          </div>
+                          <h3 class="skills__name">{{data.Pname5}}</h3>
+                          <span class="skills__subtitle">
+                            {{data.Ptype5}}
+                          </span>
+                      </div>
+  
+                      <div class="skills__data">
+                          <div class="skills_blob myclass">
+                              <img src="../../../assets/cricket (1).png" alt="Skill Image">
+                          </div>
+                          <h3 class="skills__name">{{data.Pname6}}</h3>
+                          <span class="skills__subtitle">
+                            {{data.Ptype6}}
+                          </span>
+                      </div>
+  
+                  </div>
+              </div>
+              <!--==================== SKILLS 2====================-->
+              <div class="skills__content mycon">
+                  <h3 class="skills__title mytit">
+                    <i class="ri-arrow-down-double-line"></i> Lower - Order
+                  </h3>
+  
+                  <div class="skills__info">
+                      <div class="skills__data">
+                          <div class="skills_blob myclass">
+                              <img src="../../../assets/cricket-player.png" alt="Skisll Image">
+                          </div>
+                          <h3 class="skills__name">{{data.Pname7}}</h3>
+                          <span class="skills__subtitle">
+                            {{data.Ptype7}}
+                          </span>
+                      </div>
+  
+                      <div class="skills__data">
+                          <div class="skills_blob myclass">
+                              <img src="../../../assets/player.png" alt="Skisll Image">
+                          </div>
+                          <h3 class="skills__name">{{data.Pname8}}</h3>
+                          <span class="skills__subtitle">
+                            {{data.Ptype8}}
+                          </span>
+                      </div>
+  
+                      <div class="skills__data">
+                          <div class="skills_blob myclass">
+                              <img src="../../../assets/player.png" alt="Skisll Image">
+                          </div>
+                          <h3 class="skills__name">{{data.Pname9}}</h3>
+                          <span class="skills__subtitle">
+                            {{data.Ptype9}}
+                          </span>
+                      </div>
+  
+                      <div class="skills__data">
+                          <div class="skills_blob myclass">
+                              <img src="../../../assets/player.png" alt="Skisll Image">
+                          </div>
+                          <h3 class="skills__name">{{data.Pname10}}</h3>
+                          <span class="skills__subtitle">
+                            {{data.Ptype10}}
+                          </span>
+                      </div>
+  
+                      <div class="skills__data">
+                          <div class="skills_blob myclass">
+                              <img src="../../../assets/player.png" alt="Skisll Image">
+                          </div>
+                          <h3 class="skills__name">{{data.Pname11}}</h3>
+                          <span class="skills__subtitle">
+                            {{data.Ptype11}}
+                          </span>
+                      </div>
+  
+                  </div>
+  
+  
+  
+              </div>
+  
+              <!---->
+              <div class="skills__content">
+                  <h3 class="skills__title">
+                    <i class="ri-team-line"></i>Coach
+                  </h3>
+  
+                  <div class="skills__info">
+                      <div class="skills__data">
+                          <div class="skills_blob myclass">
+                              <img src="../../../assets/cricket-player (1).png" alt="Skill Image">
+                          </div>
+                          <h3 class="skills__name">{{data.CoachName}}</h3>
+                          <span class="skills__subtitle">
+                            Head Coach
+                          </span>
+                      </div>
+  
+                      <div class="skills__data">
+                          <div class="skills_blob myclass">
+                              <img src="../../../assets/cricket-player (1).png" alt="Skill Image">
+                          </div>
+                          <h3 class="skills__name">Not Found</h3>
+                          <span class="skills__subtitle">
+                              Not Found
+                          </span>
+                      </div>
+  
+                  </div>
+              </div>
+          </div>
+              <!---->
+  
+      </section>
+  
+</ion-content>

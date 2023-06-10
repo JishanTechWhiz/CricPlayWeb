@@ -1,0 +1,106 @@
+
+<ion-content *ngIf="currentUser">
+ 
+    <div class="main_content_div">
+        <!-- <button slot="start" class="menu_btn">
+            
+        </button> -->
+  
+    <div class="user_div">
+        <div class="first_div">
+            <label class="welcome">Welcome</label>
+            <label class="username">{{currentUser.Fullname}}</label>
+        </div>
+        <div class="user_back" [style.backgroundImage]="'url()'">
+        </div>
+    </div>
+    </div>
+
+    <div class="content_div">
+        <label class="hello_lbl">Hello,{{currentUser.Fullname}} Do Whatever You Want To Do</label>
+      
+        <div class="container text-center myxx">
+            <div class="row">
+                <div class="col-md-3 col-sm-0"></div>
+
+              <div class="col-md-4 col-sm-6">
+                <div class="card mycard" style="width: 18rem;" routerLink="/add-tournament">
+                    <i class="ri-add-line myIconn"></i>
+                    <hr class="myhr">
+                    <div class="card-body">
+                      <h5 class="card-title xtitle">Add Tournament</h5>
+                    </div>
+                  </div>
+              </div>
+
+              <div class="col-md-4 col-sm-6">
+                <div class="card mycard" style="width: 18rem;" routerLink="/view-team">
+                    <i class="ri-team-line myIconn2"></i>
+                  <hr class="myhr">
+                    <div class="card-body">
+                      <h5 class="card-title xtitle">View Team</h5>
+                    </div>
+                  </div>
+              </div>
+
+              <div class="col-md-3 col-sm-0"></div>
+            </div>
+
+            <div class="row myrow">
+                <div class="col-md-3 col-sm-0"></div>
+
+              <div class="col-md-4 col-sm-6">
+                <div class="card mycard" style="width: 18rem;" routerLink="/view-tournament">
+                    <i class="ri-eye-line myIconn2"></i>
+                    <hr class="myhr">
+                      <div class="card-body">
+                        <h5 class="card-title xtitle">View Tournament</h5> 
+                      </div>
+                  </div>
+              </div>
+
+              <div class="col-md-4 col-sm-6">
+                <div class="card mycard" style="width: 18rem;" routerLink="/org-profile">
+                    <i class="ri-account-circle-line myIconn2"></i>
+                    <hr class="myhr">
+                      <div class="card-body">
+                        <h5 class="card-title xtitle">My Profile</h5> 
+                      </div>
+                  </div>
+              </div>
+
+              <div class="col-md-3 col-sm-0"></div>
+            </div>
+
+            <div class="row myrow">
+                <div class="col-md-3 col-sm-0"></div>
+
+              <div class="col-md-4 col-sm-6">
+                <div class="card mycard" style="width: 18rem;" (click)="presentAlert()">
+                    <i class="ri-logout-box-r-line myIconn2"></i>
+                  <hr class="myhr">
+                  <div class="card-body">
+                    <h5 class="card-title xtitle">Logout</h5>
+                    
+                  </div>
+                  </div>
+              </div>
+
+              <div class="col-md-4 col-sm-6">
+                
+              </div>
+
+              <div class="col-md-3 col-sm-0"></div>
+            </div>
+
+            
+          </div>
+       
+          
+    </div>    
+    
+   
+
+
+
+</ion-content>

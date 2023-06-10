@@ -1,0 +1,86 @@
+<ion-content>
+
+  <body>
+    <div class="container">
+      <input type="checkbox" id="flip">
+      <div class="cover">
+        <div class="front">
+          <img src="../../assets/image13.jpg" alt="">
+          <div class="text">
+            <span class="text-1">Every new friend is a <br> new adventure</span>
+            <span class="text-2">Let's get connected</span>
+          </div>
+        </div>
+        <div class="back">
+          <img class="backImg" src="../../assets/image11.jpg" alt="">
+          <div class="text">
+            <span class="text-1">Complete miles of journey <br> with one step</span>
+            <span class="text-2">Let's get started</span>
+          </div>
+        </div>
+      </div>
+  
+      <div class="forms">
+          <div class="form-content">
+            <div class="login-form">
+              <div class="title">User Login</div>
+            <form [formGroup]="forms" (ngSubmit)="login(forms)">
+              <div class="input-boxes">
+                <div class="input-box">
+                  <i class="ri-mail-fill"></i>
+                  <input type="text" formControlName="Email" placeholder="Enter your email" required>
+                </div>
+                <div class="input-box">
+                  <i class="ri-lock-2-fill"></i>
+                  <input [type]="showPassword2 ? 'text' : 'password'" formControlName="Password" placeholder="Enter your password" required>
+                  <i [class]="passwordToggleIcon2" class="myicon" (click)="togglePassword2()"></i>
+
+                </div>
+                <div class="text"><a href="#">Forgot password?</a></div>
+                <div class="button input-box">
+                  <input type="submit" value="Login">
+                </div>
+                <div class="text sign-up-text">Don't have an account? <label for="flip">Sigup now</label></div>
+              </div>
+          </form>
+        </div>
+          <div class="signup-form">
+            <div class="title">User Signup</div>
+          <form  [formGroup]="form" (submit)="onSubmit(form)">
+              <div class="input-boxes">
+                <div class="input-box">
+                  <i class="ri-user-fill"></i>
+                  <input type="text" formControlName="Fullname"  placeholder="Enter your name" required>
+                </div>
+                <div class="input-box">
+                  <i class="ri-mail-fill"></i>
+                  <input type="text" formControlName="Email"  placeholder="Enter your email" required>
+                </div>
+                <div class="input-box">
+                  <i class="ri-phone-fill"></i>
+                  <input type="text" formControlName="Phone"  placeholder="Enter your Number" required>
+                </div>
+                <div class="input-box">
+                  <i class="ri-lock-2-fill"></i>
+                  <input [type]="showPassword2 ? 'text' : 'password'" formControlName="Password" placeholder="Enter your password" required>
+                  <i [class]="passwordToggleIcon2" class="myicon" (click)="togglePassword2()"></i>
+                  
+                </div>
+                <div class="input-box">
+                  <i class="ri-lock-2-fill"></i>
+                  <input [type]="showPassword ? 'text' : 'password'" formControlName="ConfirmPassword" placeholder="Enter Confirm-password" required>
+                  <i [class]="passwordToggleIcon" class="myicon" (click)="togglePassword()"></i>
+                  
+                </div>
+                <div class="button input-box">
+                  <input type="submit" value="Sign-Up">
+                </div>
+                <div class="text sign-up-text">Already have an account? <label for="flip">Login now</label></div>
+              </div>
+        </form>
+      </div>
+      </div>
+      </div>
+    </div>
+  </body>
+</ion-content>

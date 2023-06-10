@@ -1,0 +1,194 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  
+}
+
+.error{
+  color:red;
+}
+
+
+#textdiv{
+  position: absolute;
+  top:50%;
+  left: 20px;
+
+}
+.Textt{
+  font-size: 80px;
+  font-weight: 800;
+  line-height: 78px;
+  letter-spacing: -2px;
+  font-family: proxima-nova,sans-serif;
+  color: white;
+  
+}
+.Textt2{
+  font-size: 26px;
+  font-family: proxima-nova,sans-serif;
+  color: white;
+  line-height: 32px;
+}
+
+.mybtn{
+  font-family: proxima-nova,sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 28px;
+  text-align: center;
+  text-decoration: none;
+  color:#243E86;
+  background-color: white;
+  padding: 16px 48px 16px 48px;
+  top: 50px;
+  border-radius: 50px;
+  transition: 0.5s;
+}
+
+.mybtn:hover{
+  background-color: #243E86;
+  color:white
+}
+
+
+.videobg{
+  position: fixed;
+  z-index: -1;
+}
+
+
+/************MEDIA QUERY*********************/
+
+@media (min-aspect-ratio: 16/9)
+{
+  .videobg{
+      height: auto;
+      width:100%;
+
+  }
+
+}
+
+
+@media only screen and (max-width: 800px)
+{
+  
+  .headerr h2{
+      font-size: 60px;
+      font-weight: 700;
+     
+  }
+
+  .headerr span{
+      font-size: 19px;
+  }
+
+  #textdiv{
+      top:30%;
+
+  }
+
+  .mybtn{
+      font-family: proxima-nova,sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 28px;
+  text-align: center;
+  text-decoration: none;
+  color:#243E86;
+  background-color: white;
+  padding: 15px 28px 15px 28px;
+  top: 50px;
+  border-radius: 50px;
+  
+  }
+
+  
+
+}
+
+/**********/
+
+.cta {
+  border: none;
+  background: none;
+  padding-top: 1rem;
+}
+
+.cta span {
+  padding-bottom: 7px;
+  letter-spacing: 4px;
+  font-size: 14px;
+  padding-right: 15px;
+  text-transform: uppercase;
+}
+
+.cta svg {
+  transform: translateX(-8px);
+  transition: all 0.3s ease;
+}
+
+.cta:hover svg {
+  transform: translateX(0);
+}
+
+.cta:active svg {
+  transform: scale(0.9);
+}
+
+.hover-underline-animation {
+  position: relative;
+  color: white;
+  padding-bottom: 20px;
+}
+
+.hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.cta:hover .hover-underline-animation:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+/*********/
+
+/***************LOGIN & SIGN UP :- CSS***********/
+
+
+.Textt2{
+  font-size: 1.5rem;
+}
+
+
+@media only screen and (max-width: 800px)
+{
+  // .input-field input{
+  //     width: 80%;
+  // }   
+
+  .Textt2{
+    display: none;
+  }
+
+ 
+
+ 
+  
+
+  
+
+  
+}

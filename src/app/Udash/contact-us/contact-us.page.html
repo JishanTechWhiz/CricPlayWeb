@@ -1,0 +1,92 @@
+<ion-content>
+  <div class="headerr">
+    <div class="container">
+      <h1>Contact Us</h1>
+    </div>
+  </div>
+  
+  
+  <!--------------------->
+  <div class="container-fluid  my-4">
+    <h1 class="myhead" data-aos="flip-up">Questions?</h1>
+    <div class="row">
+      <div class="col-md-3 col-sm-3 ">
+  
+      </div>
+      <div class="col-md-6 col-sm-6" data-aos="fade-right">
+        <p class="MYtext">The CricKnight Club of the Gujarat<br>
+          1255 23rd St. NW, Suite 450<br>
+          Ahmedabad, 380001<br>
+          <a href="#">202-452-1100</a> or <a href="#">866-720-2676</a><br>
+          Monday through Friday 8 a.m. to 11 p.m.
+        </p>
+      </div>
+      <div class="col-md-3 col-sm-3 ">
+  
+      </div>
+    </div>
+    </div>
+  
+    <!-------------------------------------->
+  
+  
+    <!-------------------------------------FORM-------------------------------------------------->
+  
+    <div class="container-fluid  my-4">
+      <h1 class="myhead" data-aos="flip-up">Contact Us</h1>
+      <div class="row">
+        <div class="col-md-3 col-sm-3 ">
+  
+        </div>
+        <div class="col-md-6 col-sm-6" data-aos="fade-right">
+          <form class="form" (submit)="sendEmail($event)">
+  
+            <div class="flex">
+              <label>
+                <input required="" name="fname" placeholder="" type="text" class="input">
+                <span>first name</span>
+              </label>
+  
+              <label>
+                <input required=""  name="lname" placeholder="" type="text" class="input">
+                <span>last name</span>
+              </label>
+            </div>
+  
+            <label>
+              <input required=""  name="email" placeholder="" type="email" class="input">
+              <span>email</span>
+            </label>
+  
+            <label>
+              <input required=""  name="number" type="tel" placeholder="" class="input">
+              <span>contact number</span>
+            </label>
+            <label>
+              <textarea required=""  name="message" rows="3" placeholder="" class="input01"></textarea>
+              <span>message</span>
+            </label>
+  
+            <button class="fancy" type="submit">
+              <span class="top-key"></span>
+              <span class="text">submit</span>
+              <span class="bottom-key-1"></span>
+              <span class="bottom-key-2"></span>
+            </button>
+          </form>
+
+          
+        </div>
+        <div class="col-md-3 col-sm-3 ">
+  
+        </div>
+      </div>
+      </div>
+  
+  
+      <!----------------FOOTER---------------->
+      <footer class="container my-5">
+        <p style="text-align: center;">©2023 CricKnight Club®, Inc. All rights reserved.</p>
+      </footer>
+
+</ion-content>

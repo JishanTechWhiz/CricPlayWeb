@@ -1,0 +1,102 @@
+<ion-content>
+ <div class="mybody">
+      <div class="container">
+          <header>Tornament Registration</header>
+  
+          <form [formGroup]="form" (submit)="onSubmit(form)">
+              <div class="form first">
+                  <div class="details personal">
+                      <span class="title">Tournament Details</span>
+  
+                      <div class="fields">
+                          <div class="input-field">
+                              <label>Tournament Name</label>
+                              <input type="text" formControlName="TournamentName" placeholder="Enter Tournament Name" required>
+                          </div>
+  
+                          <div class="input-field">
+                              <label>Tournament Start</label>
+                              <input type="date" formControlName="StartDate" placeholder="Enter Start date" required>
+                          </div>
+  
+                          <div class="input-field">
+                              <label>Tournament End</label>
+                              <input type="date" formControlName="EndDate" placeholder="Enter End date" required>
+                          </div>
+  
+                          <div class="input-field">
+                              <label>Oganizer Email</label>
+                              <input type="text"formControlName="OrgEmail" placeholder="Enter Oganizer email" required readonly>
+                          </div>
+  
+                          <div class="input-field">
+                              <label>Oganizer Number</label>
+                              <input type="number" formControlName="OrgPhone" placeholder="Enter Oganizer number" required>
+                          </div>
+  
+                          <div class="input-field">
+                              <label>Tournament Type</label>
+                              <select required formControlName="TournamentType">
+                                  <option disabled selected>Select Tournament Type</option>
+                                  <option value="International">International</option>
+                                  <option value="Domestic">Domestic</option>
+                                  <option value="Friendly">Friendly</option>
+                              </select>
+                          </div>
+  
+                          <div class="input-field">
+                              <label>Venue</label>
+                              <input type="text" formControlName="Venue" placeholder="Enter Venue" required>
+                          </div>
+  
+                          <div class="input-field">
+                              <label>State</label>
+                              <input type="text" formControlName="State" placeholder="Enter Tournament state" required>
+                          </div>
+  
+                          <div class="input-field">
+                              <label>City</label>
+                              <input type="text" formControlName="City" placeholder="Enter Tournament City" required>
+                          </div>
+  
+                          <div class="input-field">
+                              <label>Broadcast</label>
+                              <input type="text" formControlName="Broadcast" placeholder="Enter Broadcast" required>
+                          </div>
+  
+                          <div class="input-field">
+                              <label>Sponsorship</label>
+                              <input type="text" formControlName="Sponsorship" placeholder="Enter Sponsorship" required>
+                          </div>
+  
+                          <div class="input-field">
+                              <label>Prize Money</label>
+                              <input type="text" formControlName="PrizeMoney" placeholder="Enter Prize Money" required>
+                          </div>
+  
+                          <div class="input-field">
+                              <label>Regisration Fees</label>
+                              <input type="text" formControlName="RegFees" placeholder="Enter Regisration Fees" required>
+                          </div>
+  
+                          <div class="input-field">
+                              <label>Total Teams</label>
+                              <input type="text" formControlName="Overs" placeholder="Enter Teams" required>
+                          </div>
+  
+                          <div class="input-field">
+                              <!-- <label>Regisration Fees</label>
+                              <input type="text" placeholder="Enter Regisration Fees" required> -->
+                          </div>
+                          
+                      </div>
+                      <button class="sumbit" type="submit">
+                          <span class="btnText">Submit</span>
+                          <i class="uil uil-navigator"></i>
+                      </button>
+                  </div>
+                </div>
+          </form>
+      </div>
+  </div>
+</ion-content>

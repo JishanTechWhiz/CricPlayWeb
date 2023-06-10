@@ -1,0 +1,408 @@
+/*=============== VARIABLES CSS ===============*/
+// :root {
+    $header-height: 3.5rem;
+  
+    /*========== Colors ==========*/
+    /*Color mode HSL(hue, saturation, lightness)*/
+    $first-color: hsl(207, 65%, 65%);
+    $title-color: hsl(207, 4%, 16%);
+    $text-color: hsl(207, 4%, 28%);
+    $text-color-light: hsl(207, 4%, 56%);
+    $body-color: hsl(207, 4%, 99%);
+    $container-color: hsl(207, 4%, 95%);
+  
+    /* Change the first number */
+    /* Blue: 207 - Purple: 250 - Pink: 356 - Teal: 174 */
+    $gradient-color: linear-gradient(180deg,
+                        hsla(250, 48%, 72%, 0),
+                        hsla(250, 65%, 65%, 1));
+  
+    /*========== Font and typography ==========*/
+    /*.5rem = 8px | 1rem = 16px ...*/
+    $body-font: 'Roboto', sans-serif;
+    /* --body-font: 'Poppins', sans-serif; */
+    $title-font: 'Lora', serif;
+    
+    /* --title-font: sans-serif; */
+    $biggest-font-size: 1.5rem;
+    $h1-font-size: 1.5rem;
+    $h2-font-size: 1.25rem;
+    $h3-font-size: 1rem;
+    $normal-font-size: .938rem;
+    $small-font-size: .813rem;
+    $smaller-font-size: .75rem;
+    $tiny-font-size: .625rem;
+  
+    /*========== Font weight ==========*/
+    $font-medium: 500;
+    $font-semi-bold: 600;
+  
+    /*========== z index ==========*/
+    $z-normal: 1;
+    $z-tooltip: 10;
+    $z-fixed: 100;
+//   }
+
+/* Responsive typography */
+@media screen and (min-width: 1024px) {
+    
+      $biggest-font-size: 3rem;
+      $h1-font-size: 2.25rem;
+      $h2-font-size: 1.5rem;
+      $h3-font-size: 1.25rem;
+      $normal-font-size: 1rem;
+      $small-font-size: .875rem;
+      $smaller-font-size: .813rem;
+      $tiny-font-size: .688rem;
+    
+  }
+
+/*=============== BASE ===============*/
+*{
+   
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+ion-content{
+   font-family: $body-font;
+   font-size: $normal-font-size;
+   background-color: $body-color;
+   color: $text-color;
+   transition: background .4s; /*For Dark Mode Animation*/
+}
+
+h1,h2,h3{
+    color: $title-color;
+    font-family: $title-font;
+    font-weight: $font-medium;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+/*=============== REUSABLE CSS CLASSES ===============*/
+
+#mytext{
+    color: hsla(250, 65%, 65%, 1);
+    font-family: sans-serif;
+    font-weight: 500;
+}
+
+.container{
+    max-width:1024px;
+    margin-inline: 1.5rem;
+}
+
+.grid{
+    display: grid;
+    gap: 1.5rem;
+}
+
+.section{
+    padding-block: 2.5rem;
+   
+}
+
+.section__border{
+    border-bottom: 1px solid $title-color;
+    padding-bottom: 3.5rem;
+}
+
+.section__title, 
+.section__subtitle {
+  text-align: center;
+}
+
+.section__title {
+    font-size:2rem;
+    font-weight: $font-semi-bold;
+    margin-bottom: .25rem;
+  }
+  
+  .section__subtitle {
+    display: block;
+    font-size: 1rem;
+    color: $text-color-light;
+    margin-bottom: 3rem;
+  }
+
+
+/*********************************************************/
+
+// .mybg{
+//    background-color: red;
+//    border: 1px solid black;
+//    border-radius: 0.7rem;
+  
+// }
+
+.mytur{
+    background-color: red;
+   border: 2px solid black;
+   border-radius: 10px;
+   margin-right: 120px;
+    margin-left: 120px;
+}
+
+.btn-group{
+     margin-top: -8rem;
+    padding-bottom: 1rem;
+    margin-left: 52rem;
+}
+
+.btn{
+    padding: 0.3rem;
+}
+.myhead{
+    margin-top: 1rem;
+}
+  .skills__container{
+    row-gap: 3.5rem;
+}
+
+.skills__title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: .5rem;
+    font-size: 1.3rem;
+    margin-bottom: 2.5rem;
+    margin-right: 2rem;
+
+}
+
+.mytit{
+    margin-top: 2rem;
+}
+
+.skills__info,
+.skills__data,
+.skills__blob{
+    display: grid;
+}
+
+.skills__info{
+    grid-template-columns: repeat(2, 170px);
+    gap:2.5rem 2rem;
+}
+
+.skills__data{
+    justify-content: center;
+    text-align: center;
+}
+
+.myclass{
+    width: 90px;
+   height: 120px;
+   background: $container-color;
+   border-radius: 3rem;
+   place-items: center;
+   margin-bottom: 1rem; 
+   justify-content: center;
+   transition: background .4s; 
+}
+
+.skills_blob img{
+    width: 60px;
+    margin-top: 1.75rem;
+}
+
+.skills__name{
+    font-family: sans-serif;
+    font-size: 1rem;
+    color:red;
+    margin-bottom: .25rem;
+}
+
+.skills__subtitle{
+    font-size: 0.9rem;
+    color: $text-color-light;
+}
+
+.myclass:hover img{
+    animation: bounce-skills .6s;
+}
+
+@keyframes bounce-skills{
+    0%{
+        transform: translate(0);
+    }
+    20%{
+        transform: translateY(-6px);
+    }
+    40%{
+        transform: translate(0);
+    }
+    60%{
+        transform: translateY(-3px);
+    }
+    80%{
+        transform: translate(0);
+    }
+}
+
+
+@media screen and (max-width: 400px){
+    .container{
+        margin-inline: 1rem;
+    }
+
+   
+
+    .skills__info{
+        grid-template-columns: repeat(2,1fr);
+        margin-right: 1.5rem;
+    }
+
+   
+}
+
+@media screen and (min-width: 500px){
+    .skills__info{
+        grid-template-columns: repeat(3,1fr);
+    }
+    
+
+
+}
+
+@media screen and (max-width: 550px){
+    .myhead{
+        position: absolute;
+        margin-left: 7.5rem;
+    }
+
+    .mydis{
+        display: none;
+    }
+
+    .btn-group{
+        position: absolute;
+        margin-left: 7rem;
+        margin-top: 0.5rem;
+    }
+
+    .skills__info{
+        margin-top: 5rem;
+    }
+
+    .myInfo{
+        padding-top: 2.4rem;
+    }
+
+    .myl{
+        margin-left: 6rem;
+    }
+
+    .myc{
+        margin-left: 9rem;
+    }
+
+    .myinfo2{
+        padding-top: 2rem;
+    }
+    }
+
+@media screen and (min-width: 576px){
+    
+    .skills__container{
+        justify-content: center;
+    }
+    
+    
+}
+
+@media screen and (min-width: 635px){
+    .skills__info{
+        grid-template-columns: repeat(6,1fr);
+    }
+}
+
+
+
+@media screen and (min-width:767px){
+    .skills__container{
+        grid-template-columns: repeat(1,max-content);
+        
+    }
+
+    .mycon{
+        margin-top: -2rem;
+    }
+
+    .skills__container{
+        
+        column-gap: 5rem;
+    }
+}
+
+@media screen and (min-width: 1023px){
+    /* .section{
+        padding-block: 8rem 0;
+    } */
+
+    .home__title{
+        font-size: 2.25rem;
+    }
+
+   
+
+}
+
+@media screen and (min-width: 1048px){
+    .container{
+        margin-inline: auto;
+    }
+    .myborder{
+        border: 1px solid hsl(207, 4%, 16%);
+        margin-top: 1rem;
+        border-radius: 5px;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .section__border{
+        padding-bottom: 6rem;
+    }
+
+    .section__subtitle{
+        margin-bottom: 5rem;
+    }
+
+    .skills__container{
+        column-gap: 10rem;
+        /* grid-template-columns: repeat(3,330px); */
+        
+    }
+
+    
+
+    .skills__title{
+        margin-bottom: 3rem;
+    }
+
+
+    .skills__name{
+        font-size: $normal-font-size;
+    }
+
+    .skills__info{
+        gap: 3rem;
+    }
+}

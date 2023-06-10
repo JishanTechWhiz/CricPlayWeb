@@ -1,0 +1,159 @@
+<ion-content>
+  <!-- <div class="container-fluid g-0 p-2 mycss" *ngFor="let data of datauser">
+    <h1>{{data.TournamentName}}</h1>
+   </div> -->
+
+   <div class="employees" *ngIf="currentUser">
+
+    <div class="row mt-5 myblock">
+      <div class="col text-center">
+        <h1 class="mycolor">My Tournament</h1>
+      </div>
+    </div>
+
+    <div class="row mt-4" *ngFor="let data of datauser">
+      <div class="col">
+        <div class="container-fluid g-0 p-2 mycss" *ngIf="data.OrgEmail==currentUser.Email">
+
+
+
+          <div class="row g-0">
+
+            <div class="col-md-2 d-flex justify-content-center align-items-center">
+              <img src="../../../assets/cricket-ground.png" alt="Profile Image" class="profile">
+            </div>
+
+            <div class="col ps-2">
+
+              <div class="row g-0">
+
+                <div class="col-md-10 text-center myname">
+                  <span class="name">{{data.TournamentName}}</span>
+
+                </div>
+                <div class="col-md-10 text-center fs-5 fst-italic text-secondary">
+                  <span>TournamentDetails</span>
+
+                </div>
+
+
+                <div class="col-md-2 d-flex justify-content-center align-items-center">
+                  <div class="btn-group" role="group">
+                    <button type="button" class="btn btn-outline-success" routerLink="/join-form/{{data._id}}">Update</button>
+                    
+                    <button type="button" class="btn btn-outline-danger" (click)="deleteCargo(data._id)" >Delete</button>
+                    
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="row g-0 mt-3">
+
+                <div class="col-md">
+
+                  <table class="table table-hover mx-auto">
+                    <!-- <thead class="text-center fs-5 fst-italic text-secondary">
+                                    <tr>
+                                        <td colspan="2">Personal Details</td>
+                                    </tr>
+                                </thead> -->
+                    <tbody>
+                      <tr>
+                        <td class="jis">T-Name</td>
+                        <td>{{data.TournamentName}}</td>
+                      </tr>
+                      <tr>
+                        <td class="jis">Org Email</td>
+                        <td>{{data.OrgEmail}}</td>
+                      </tr>
+
+                      <tr>
+                        <td class="jis">Start Date</td>
+                        <td>{{data.StartDate}}</td>
+                      </tr>
+
+                      <tr>
+                        <td class="jis">State</td>
+                        <td>{{data.State}}</td>
+                      </tr>
+
+                      <tr>
+                        <td class="jis">Broadcast</td>
+                        <td>{{data.Broadcast}}</td>
+                      </tr>
+
+                      <tr>
+                        <td class="jis">Reg-Fees</td>
+                        <td>{{data.RegFees}}</td>
+                      </tr>
+
+                      <tr>
+                        <td class="jis">Venue</td>
+                        <td>{{data.Venue}}</td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+                </div>
+
+                <div class="col">
+
+                  <table class="table table-hover mx-auto">
+                    <!-- <thead class="text-center fs-5 fst-italic text-secondary">
+                                    <tr>
+                                        <td colspan="2">Personal Details</td>
+                                    </tr>
+                                </thead> -->
+                    <tbody>
+                      <tr>
+                        <td class="jis">T-Type</td>
+                        <td>{{data.TournamentType}}</td>
+                      </tr>
+
+                      <tr>
+                        <td class="jis">Org Number</td>
+                        <td>{{data.OrgPhone}}</td>
+                      </tr>
+
+                      <tr>
+                        <td class="jis">End Date</td>
+                        <td>{{data.EndDate}}</td>
+                      </tr>
+
+                      <tr>
+                        <td class="jis">City</td>
+                        <td>{{data.City}}</td>
+                      </tr>
+
+                      <tr>
+                        <td class="jis">Sponsorship</td>
+                        <td>{{data.Sponsorship}}</td>
+                      </tr>
+
+                      <tr>
+                        <td class="jis">Prize Money</td>
+                        <td>{{data.PrizeMoney}}</td>
+                      </tr>
+
+                      <tr>
+                        <td class="jis">Total Teams</td>
+                        <td>{{data.Overs}}</td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+</ion-content>

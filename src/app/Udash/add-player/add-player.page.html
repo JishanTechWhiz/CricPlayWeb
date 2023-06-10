@@ -1,0 +1,206 @@
+<ion-content>
+ 
+  <!-- <body> -->
+    <div class="mybody">
+      <div class="container">
+          <header>Registration</header>
+  
+          <form [formGroup]="form" (submit)="onSubmit(form)">
+              <div class="form first">
+                  <div class="details personal">
+                      <span class="title">Personal Details</span>
+  
+                      <div class="fields">
+                          <div class="input-field">
+                              <label>Team Name</label>
+                              <input type="text" formControlName="TeamName" placeholder="Enter your name" required>
+                          </div>
+  
+                          <div class="input-field">
+                              <label>Coach Name</label>
+                              <input type="text" formControlName="CoachName" placeholder="Enter Your name" required>
+                          </div>
+  
+  
+                          <div class="input-field">
+                              <label>Email</label>
+                              <input type="text" formControlName="Email" placeholder="Enter your email" required readonly>
+                          </div>
+  
+                          <span class="title">Players Details</span>
+                          <div class="container text-center mycon">
+                              <div class="row">
+                                  <div class="col-md-4 myc">
+                                      <span class="myt">Player Name</span>
+                                  </div>
+                                  <div class="col-md-4 myc">
+                                      <span class="myt">Player Age</span>
+                                  </div>
+                                  <div class="col-md-4 myc">
+                                      <span class="myt">Player Type</span>
+                                  </div>
+  
+                                <div class="col-md-4">
+                                      <input class="myin" formControlName="Pname1" type="text" placeholder=" Enter Player Name">
+                                  </div>
+                                  <div class="col-md-4">
+                                      <input class="myin" formControlName="Page1" type="text" placeholder=" Enter Player Age">
+                                  </div>
+                                  <div class="col-md-4">
+                                      <input class="myin" formControlName="Ptype1" type="text" placeholder=" Enter Player Type">
+                                  </div>
+                              </div>
+  
+                              <div class="row">
+                                  <div class="col-md-4">
+                                        <input class="myin" formControlName="Pname2" type="text" placeholder=" Enter Player Name">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <input class="myin" formControlName="Page2" type="text" placeholder=" Enter Player Age">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <input class="myin" formControlName="Ptype2" type="text" placeholder=" Enter Player Type">
+                                    </div>
+                                </div>
+  
+                                <div class="row">
+                                  <div class="col-md-4">
+                                        <input class="myin" formControlName="Pname3" type="text" placeholder=" Enter Player Name">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <input class="myin" formControlName="Page3" type="text" placeholder=" Enter Player Age">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <input class="myin" formControlName="Ptype3" type="text" placeholder=" Enter Player Type">
+                                    </div>
+                                </div>
+  
+                                <div class="row">
+                                  <div class="col-md-4">
+                                        <input class="myin" formControlName="Pname4" type="text" placeholder=" Enter Player Name">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <input class="myin" formControlName="Page4" type="text" placeholder=" Enter Player Age">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <input class="myin" formControlName="Ptype4" type="text" placeholder=" Enter Player Type">
+                                    </div>
+                                </div>
+  
+                                <div class="row">
+                                  <div class="col-md-4">
+                                        <input class="myin" formControlName="Pname5" type="text" placeholder=" Enter Player Name">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <input class="myin" formControlName="Page5" type="text" placeholder=" Enter Player Age">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <input class="myin" formControlName="Ptype5" type="text" placeholder=" Enter Player Type">
+                                    </div>
+                                </div>
+  
+                                <div class="row">
+                                  <div class="col-md-4">
+                                        <input class="myin" formControlName="Pname6" type="text" placeholder=" Enter Player Name">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <input class="myin" formControlName="Page6" type="text" placeholder=" Enter Player Age">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <input class="myin" formControlName="Ptype6" type="text" placeholder=" Enter Player Type">
+                                    </div>
+                                </div>
+  
+                                <div class="row">
+                                  <div class="col-md-4">
+                                        <input class="myin" formControlName="Pname7" type="text" placeholder=" Enter Player Name">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <input class="myin" formControlName="Page7" type="text" placeholder=" Enter Player Age">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <input class="myin" formControlName="Ptype7" type="text" placeholder=" Enter Player Type">
+                                    </div>
+                                </div>
+  
+                                <div class="row">
+                                  <div class="col-md-4">
+                                        <input class="myin" formControlName="Pname8" type="text" placeholder=" Enter Player Name">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <input class="myin" formControlName="Page8" type="text" placeholder=" Enter Player Age">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <input class="myin" formControlName="Ptype8" type="text" placeholder=" Enter Player Type">
+                                    </div>
+                                </div>
+  
+                                <div class="row">
+                                  <div class="col-md-4">
+                                        <input class="myin" formControlName="Pname9" type="text" placeholder=" Enter Player Name">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <input class="myin" formControlName="Page9" type="text" placeholder=" Enter Player Age">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <input class="myin" formControlName="Ptype9" type="text" placeholder=" Enter Player Type">
+                                    </div>
+                                </div>
+  
+                                <div class="row">
+                                  <div class="col-md-4">
+                                        <input class="myin" formControlName="Pname10" type="text" placeholder=" Enter Player Name">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <input class="myin" formControlName="Page10" type="text" placeholder=" Enter Player Age">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <input class="myin" formControlName="Ptype10" type="text" placeholder=" Enter Player Type">
+                                    </div>
+                                </div>
+  
+                                <div class="row">
+                                  <div class="col-md-4">
+                                        <input class="myin" formControlName="Pname11" type="text" placeholder=" Enter Player Name">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <input class="myin" formControlName="Page11" type="text" placeholder=" Enter Player Age">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <input class="myin" formControlName="Ptype11" type="text" placeholder=" Enter Player Type">
+                                    </div>
+                                </div>
+  
+                          </div>
+  
+  
+  
+  
+                          <div class="input-field mycc">
+                              <label>Mobile Number</label>
+                              <input type="number" formControlName="Phone" placeholder="Enter mobile number" required>
+                          </div>
+  
+                          <div class="input-field mycc">
+                              <label>State</label>
+                              <input type="text" formControlName="State" placeholder="Enter your City" required>
+                          </div>
+  
+                          <div class="input-field mycc">
+                              <label>City</label>
+                              <input type="text" formControlName="City" placeholder="Enter your State" required>
+                          </div>
+                      </div>
+                  </div>
+                  <button class="sumbit" type="submit">
+                      <span class="btnText">Submit</span>
+                      <i class="uil uil-navigator"></i>
+                  </button>
+              </div>
+  
+    
+          </form>
+      </div>
+  <!-- </body> -->
+    </div>
+</ion-content>
